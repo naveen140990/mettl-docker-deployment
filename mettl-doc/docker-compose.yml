@@ -1,0 +1,18 @@
+version: '2'
+services:
+    mettl-doc:
+        build:
+            context: .
+            args:
+                build_ver: $build_ver
+        volumes:
+            - "./:/config"
+            - "./log:/log"
+        network_mode: host
+        environment:
+            JAVA_OPTS: "$memory_args"
+        logging:
+            driver: "json-file"
+            options:
+                max-size: "100m"
+                max-file: "5"

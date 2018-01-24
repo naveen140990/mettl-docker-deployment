@@ -1,1 +1,2 @@
-# mettl-docker-deployment
+# uzi-docker-deployment
+It contains docker deployment configurations
