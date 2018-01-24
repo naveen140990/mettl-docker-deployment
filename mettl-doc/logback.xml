@@ -24,7 +24,7 @@
     </encoder>
   </appender>
 
-  <logger additivity="false" level="debug" name="in.cashify">
+  <logger additivity="false" level="debug" name="com.mettl">
     <appender-ref ref="FILE"/>
   </logger>
 
